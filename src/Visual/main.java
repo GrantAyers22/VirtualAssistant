@@ -4,6 +4,7 @@ package Visual;
 import java.awt.Dimension;
 import java.awt.LayoutManager;
 import java.awt.Toolkit;
+import java.util.regex.Pattern;
 
 import javax.swing.BoxLayout;
 import javax.swing.DefaultListModel;
@@ -14,19 +15,20 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListSelectionModel;
 
+import CharacterStack.SpriteStack;
+
 
 // Main class
 public class main {
 		
 	// Main function
 	public static void main(String[] args) {
-
 		LittleGuy();
-	
     } 
 	public static void LittleGuy() {
 		Movement m = new Movement(0, 0);
 	}
+	/*
 	public static void List() {
 		JFrame frame = new JFrame();
 		frame.setSize(75, 165);
@@ -71,5 +73,5 @@ public class main {
 		frame.add(buttonpannel);
 		frame.setVisible(true);
 	}
-
+*/
 }

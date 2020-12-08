@@ -17,7 +17,7 @@ public class Strip {
 	
 	public BufferedImage[] createStrip(int[] movementValues) {
 		movementStripIterator = 0;
-		BufferedImage[] all_movement = new SpriteSheet(path).getSprites();
+		BufferedImage[] all_movement = new SansSheet(path).getSprites();
 		movementStrip = new BufferedImage[movementValues.length];
 
 		

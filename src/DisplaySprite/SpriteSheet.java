@@ -25,8 +25,8 @@ public class SpriteSheet {
 		}
 		// The above line throws an checked IOException which must be caught.
 
-		final int width = 32;
-		final int height = 50;
+		final int width = 24;
+		final int height = 32;
 		final int rows = 4;
 		final int cols = 4;
 		sprites = new BufferedImage[rows * cols];

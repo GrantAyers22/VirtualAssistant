@@ -69,7 +69,7 @@ public class Movement{
 			IncrementIteration();
 			
 			// delay
-			pause(50);
+			pause(90);
 		}
 	
 	
@@ -88,12 +88,14 @@ public class Movement{
 		//OyCunt();
 	}
 	
+	
 	public static void Wander(int frame_num, int dir) {
 
 		Move.get(dir).run();		
 		BufferedImage Current_Frame = new Display(dir, frame_num).getCurrentSprite();
 		frame.ShowAt(Current_Frame, x, y);
 	}
+	
 	
 	private void MoveUp() {
 		if (y < -32) 
@@ -114,14 +116,14 @@ public class Movement{
 			x = (int) width;
 		if (x < 0)
 			iteration = 0;
-		x -= 5;
+		x -= 8;
 	}
 	private void MoveRight() {
 		if (x > width)
 			x = -32;
 		if (x > width-32) 
 			iteration = 0;
-		x += 5;
+		x += 8;
 	}
 	private void IncrementIteration() {
 		iteration++;

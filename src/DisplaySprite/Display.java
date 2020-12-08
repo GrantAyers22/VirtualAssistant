@@ -12,7 +12,7 @@ public class Display {
 	
 	private int direction;
 	private int frameNumber;
-	private final String path = "\\D:\\Virtual Assistant\\Sprite_Sheet.png";
+	private final String path = "\\D:\\Virtual Assistant\\Sans_spritesheet.png";
 	private BufferedImage[][] frames= {new UpStrip(path).getStrip(),
 			  						   new DownStrip(path).getStrip(),
 			  						   new LeftStrip(path).getStrip(),
